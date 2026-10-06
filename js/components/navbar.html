@@ -1,0 +1,141 @@
+<nav class="sticky top-0 z-50 w-full bg-white shadow-md">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <a href="../index.html" class="shrink-0">
+      <img
+        class="h-auto w-25"
+        src="../assets/svg/logos/primary_logo.svg"
+        alt="UniLink"
+      />
+    </a>
+
+    <!-- Enlaces desktop -->
+    <div class="hidden flex-1 items-center justify-center gap-0 lg:flex">
+      <a
+        href="../pages/opportunities.html"
+        class="rounded-lg px-3 py-2 text-sm text-gray-800 transition-all hover:bg-blue-50 hover:text-blue-600 md:text-base"
+      >
+        Oportunidades
+      </a>
+
+      <a
+        href="../index.html#como-funciona"
+        class="rounded-lg px-3 py-2 text-sm text-gray-800 transition-all hover:bg-blue-50 hover:text-blue-600 md:text-base"
+      >
+        Cómo funciona
+      </a>
+
+      <a
+        href="../index.html#recientes"
+        class="rounded-lg px-3 py-2 text-sm text-gray-800 transition-all hover:bg-blue-50 hover:text-blue-600 md:text-base"
+      >
+        Recientes
+      </a>
+
+      <a
+        href="../index.html#estudiantes"
+        class="rounded-lg px-3 py-2 text-sm text-gray-800 transition-all hover:bg-blue-50 hover:text-blue-600 md:text-base"
+      >
+        Para estudiantes
+      </a>
+
+      <a
+        href="../index.html#proyectos"
+        class="rounded-lg px-3 py-2 text-sm text-gray-800 transition-all hover:bg-blue-50 hover:text-blue-600 md:text-base"
+      >
+        Para proyectos
+      </a>
+    </div>
+
+    <!-- Acciones -->
+    <div class="hidden shrink-0 items-center gap-3 lg:flex">
+      <a
+        href="../pages/login.html"
+        class="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium text-blue-600 transition-all duration-150 hover:bg-blue-50 active:scale-95 md:text-base"
+      >
+        <i data-lucide="log-in" class="h-5 w-5"></i>
+        Iniciar sesión
+      </a>
+
+      <a
+        href="../pages/register.html"
+        class="flex cursor-pointer items-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-sm font-medium text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-700 active:scale-95 md:text-base"
+      >
+        <i data-lucide="user-plus" class="h-5 w-5"></i>
+        Registrarse
+      </a>
+    </div>
+
+    <!-- Menú móvil -->
+    <button
+      id="menu-button"
+      type="button"
+      class="rounded-lg p-2 text-gray-800 lg:hidden"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+    >
+      <i id="menu-icon" data-lucide="menu" class="h-6 w-6"></i>
+    </button>
+  </div>
+
+  <!-- Menú móvil -->
+  <div
+    id="mobile-menu"
+    class="hidden h-[calc(100dvh-73px)] border-t border-gray-200 bg-white lg:hidden"
+  >
+    <div class="flex flex-col gap-2 p-6">
+      <a
+        href="../pages/opportunities.html"
+        class="rounded-lg px-3 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+      >
+        Oportunidades
+      </a>
+
+      <a
+        href="../index.html#como-funciona"
+        class="rounded-lg px-3 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+      >
+        Cómo funciona
+      </a>
+
+      <a
+        href="../index.html#recientes"
+        class="rounded-lg px-3 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+      >
+        Recientes
+      </a>
+
+      <a
+        href="../index.html#estudiantes"
+        class="rounded-lg px-3 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+      >
+        Para estudiantes
+      </a>
+
+      <a
+        href="../index.html#proyectos"
+        class="rounded-lg px-3 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+      >
+        Para proyectos
+      </a>
+
+      <div class="mt-3 flex flex-col gap-2 border-t border-gray-200 pt-4">
+        <a
+          href="../pages/login.html"
+          class="flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-medium text-gray-800 hover:bg-gray-100"
+        >
+          <i data-lucide="log-in" class="h-4 w-4"></i>
+          Iniciar sesión
+        </a>
+
+        <a
+          href="../pages/register.html"
+          class="flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-3 text-sm font-medium text-white hover:bg-blue-700"
+        >
+          <i data-lucide="user-plus" class="h-4 w-4"></i>
+          Registrarse
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -9,417 +8,306 @@
 
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
-    <nav class="sticky top-0 left-0 z-50 w-full bg-white shadow-md">
-        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-            <!-- Logo -->
-            <div class="shrink-0">
-                <img class="h-auto w-25" src="assets/svg/logos/primary_logo.svg" alt="UniLink" />
-            </div>
-
-            <!-- Enlaces desktop -->
-            <div class="hidden flex-1 items-center justify-center gap-0 lg:flex">
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#oportunidades">
-                    Oportunidades
-                </a>
-
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#como-funciona">
-                    Cómo funciona
-                </a>
-
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#recientes">
-                    Recientes
-                </a>
-
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#estudiantes">
-                    Para estudiantes
-                </a>
-
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#proyectos">
-                    Para proyectos
-                </a>
-            </div>
-
-            <!-- Acciones desktop -->
-            <div class="hidden shrink-0 items-center gap-3 lg:flex">
-                <button
-                    class="text-sm inline-flex cursor-pointer items-center gap-2 rounded-lg border border-transparent px-5 py-3 text-blue-600 transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 active:bg-blue-50 active:scale-95 md:text-base">
-                    <i data-lucide="log-in" class="h-5 w-5"></i>
-                    Iniciar sesión
-                </button>
-
-                <button
-                    class="text-sm inline-flex cursor-pointer items-center gap-2 rounded-lg border border-blue-600 bg-blue-600 px-5 py-3 text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-800 active:bg-blue-800 active:scale-95 md:text-base">
-                    <i data-lucide="user-plus" class="h-5 w-5"></i>
-                    Registrarse
-                </button>
-            </div>
-
-            <!-- Botón hamburguesa -->
-            <button id="menu-button" type="button"
-                class="cursor-pointer rounded-lg p-2 text-gray-800 transition-all duration-150 select-none touch-manipulation hover:bg-gray-100 active:bg-gray-200 active:scale-95 lg:hidden"
-                aria-label="Abrir menú" aria-expanded="false">
-                <i id="menu-icon" data-lucide="menu" class="h-6 w-6"></i>
-            </button>
-        </div>
-
-        <!-- Menú móvil -->
-        <div id="mobile-menu" class="hidden h-[calc(100dvh-73px)] border-t border-gray-200 bg-white lg:hidden">
-            <div class="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-4">
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#oportunidades">
-                    Oportunidades
-                </a>
-
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#como-funciona">
-                    Cómo funciona
-                </a>
-
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#recientes">
-                    Recientes
-                </a>
-
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#estudiantes">
-                    Para estudiantes
-                </a>
-
-                <a class="text-sm font-normal rounded-lg px-3 py-2 text-gray-800 no-underline transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 hover:text-blue-600 active:bg-blue-50 active:text-blue-600 active:scale-95 md:text-base"
-                    href="#proyectos">
-                    Para proyectos
-                </a>
-
-                <div class="mt-2 flex flex-col gap-2 border-t border-gray-200 pt-4">
-                    <button
-                        class="text-sm inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg px-5 py-3 text-blue-600 transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 active:bg-blue-50 active:scale-95 md:text-base">
-                        <i data-lucide="log-in" class="h-5 w-5"></i>
-                        Iniciar sesión
-                    </button>
-
-                    <button
-                        class="text-sm inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-800 active:bg-blue-800 active:scale-95 md:text-base">
-                        <i data-lucide="user-plus" class="h-5 w-5"></i>
-                        Registrarse
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero -->
-    <header class="pb-6 pt-8 md:pb-10 md:pt-16">
-        <div class="mx-auto flex max-w-7xl flex-col px-6 md:flex-row md:items-center lg:gap-12">
-            <!-- Mockup -->
-            <div class="order-1 flex w-full justify-center md:order-2 lg:flex-1">
-                <img class="h-auto w-64 md:w-full md:max-w-xl" src="./assets/images/hero/Mockup-Hero-1.png"
-                    alt="Vista de la plataforma UniLink" />
-            </div>
-
-            <!-- Información -->
-            <div class="order-2 flex w-full flex-col items-start space-y-6 md:order-1 lg:flex-1">
-                <h1 class="text-xl font-bold text-blue-600 md:text-2xl lg:text-4xl">
-                    Conecte su talento con oportunidades reales
-                </h1>
-
-                <p class="text-sm font-normal text-gray-700 md:text-base">
-                    UniLink conecta estudiantes universitarios con empresas,
-                    emprendimientos y personas que necesitan apoyo en proyectos y
-                    servicios.
-                </p>
-
-                <div class="flex flex-wrap gap-3">
-                    <button
-                        class="text-sm inline-flex cursor-pointer items-center gap-2 rounded-lg border border-blue-600 bg-blue-600 px-5 py-3 text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-800 active:bg-blue-800 active:scale-95 md:text-base">
-                        Explorar oportunidades
-                        <i data-lucide="arrow-right" class="h-5 w-5"></i>
-                    </button>
-
-                    <button
-                        class="text-sm inline-flex cursor-pointer items-center gap-2 rounded-lg border border-blue-600 px-5 py-3 text-blue-600 transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 active:bg-blue-50 active:scale-95 md:text-base">
-                        Publicar un proyecto
-                        <i data-lucide="plus" class="h-5 w-5"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div id="navBar"></div>
 
     <main>
-        <!-- Oportunidades (¿Qué busca hacer?) -->
-        <section id="oportunidades" class="py-12 md:py-20 bg-gray-50">
-            <div class="flex flex-col items-center mx-auto max-w-7xl gap-12 px-6">
+      <!-- Hero -->
+
+      <header class="pb-6 pt-8 md:pb-10 md:pt-16">
+        <div
+          class="mx-auto flex max-w-7xl flex-col px-6 md:flex-row md:items-center lg:gap-12"
+        >
+          <!-- Imagen -->
+          <div class="order-1 flex w-full justify-center md:order-2 lg:flex-1">
+            <img
+              class="h-auto w-64 md:w-full md:max-w-xl"
+              src="./assets/images/hero/Mockup-Hero-1.png"
+              alt="Vista de la plataforma UniLink"
+            />
+          </div>
+
+          <!-- Contenido -->
+          <div
+            class="order-2 flex w-full flex-col items-start space-y-6 md:order-1 lg:flex-1"
+          >
+            <h1 class="text-xl font-bold text-blue-600 md:text-2xl lg:text-4xl">
+              Conecte su talento con oportunidades reales
+            </h1>
+
+            <p class="text-sm font-normal text-gray-700 md:text-base">
+              UniLink conecta estudiantes universitarios con empresas,
+              emprendimientos y personas que necesitan apoyo en proyectos y
+              servicios.
+            </p>
+
+            <!-- Botones generados en el hero -->
+            <div id="hero-buttons" class="flex flex-wrap gap-3"></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Qué busca hacer -->
+
+      <section id="oportunidades" class="py-12 md:py-20">
+        <div class="mx-auto max-w-7xl px-6">
+          <!-- Título -->
+          <div class="mb-10 text-center">
+            <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+              ¿Qué busca hacer?
+            </h2>
+
+            <p
+              class="mx-auto mt-3 max-w-2xl text-sm leading-6 text-gray-600 md:text-base"
+            >
+              Encuentre la forma de participar en UniLink según sus objetivos.
+            </p>
+          </div>
+
+          <!-- Cards -->
+          <div class="grid gap-6 md:grid-cols-2">
+            <!-- Estudiante -->
+            <article
+              class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 text-blue-600"
+              >
+                <i data-lucide="graduation-cap" class="h-6 w-6"></i>
+              </div>
+
+              <h3 class="mb-2 text-lg font-semibold text-gray-900">
+                Soy estudiante
+              </h3>
+
+              <p class="text-sm leading-6 text-gray-600">
+                Encuentre proyectos donde pueda aplicar sus conocimientos y
+                adquirir experiencia práctica.
+              </p>
+            </article>
+
+            <!-- Proyecto -->
+            <article
+              class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+            >
+              <div
+                class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 text-blue-600"
+              >
+                <i data-lucide="briefcase" class="h-6 w-6"></i>
+              </div>
+
+              <h3 class="mb-2 text-lg font-semibold text-gray-900">
+                Necesito apoyo
+              </h3>
+
+              <p class="text-sm leading-6 text-gray-600">
+                Publique su proyecto o necesidad y encuentre estudiantes que
+                puedan ayudarle.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cómo funciona -->
+
+      <section id="como-funciona" class="bg-gray-50 py-12 md:py-20">
+        <div class="mx-auto max-w-7xl px-6">
+          <!-- Título -->
+          <div class="mb-10 text-center">
+            <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+              ¿Cómo funciona UniLink?
+            </h2>
+
+            <p
+              class="mx-auto mt-3 max-w-2xl text-sm leading-6 text-gray-600 md:text-base"
+            >
+              Una forma sencilla de conectar conocimientos con oportunidades
+              reales.
+            </p>
+          </div>
+
+          <!-- Pasos -->
+          <div class="grid gap-8 md:grid-cols-3">
+            <!-- Paso 1 -->
+            <article class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-lg font-bold text-white"
+              >
+                1
+              </div>
+
+              <h3 class="mb-2 text-lg font-semibold text-gray-900">
+                Cree su perfil
+              </h3>
+
+              <p class="max-w-sm text-sm leading-6 text-gray-600">
+                Muestre sus conocimientos, habilidades y áreas de interés.
+              </p>
+            </article>
+
+            <!-- Paso 2 -->
+            <article class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-lg font-bold text-white"
+              >
+                2
+              </div>
+
+              <h3 class="mb-2 text-lg font-semibold text-gray-900">
+                Explore oportunidades
+              </h3>
+
+              <p class="max-w-sm text-sm leading-6 text-gray-600">
+                Encuentre proyectos relacionados con sus conocimientos.
+              </p>
+            </article>
+
+            <!-- Paso 3 -->
+            <article class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-lg font-bold text-white"
+              >
+                3
+              </div>
+
+              <h3 class="mb-2 text-lg font-semibold text-gray-900">
+                Conecte y gane experiencia
+              </h3>
+
+              <p class="max-w-sm text-sm leading-6 text-gray-600">
+                Participe en proyectos reales y fortalezca su experiencia.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Oportunidades recientes -->
+
+      <section id="recientes" class="py-12 md:py-20">
+        <div class="mx-auto max-w-7xl px-6">
+          <!-- Título -->
+          <div class="mb-10 text-center">
+            <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+              Oportunidades recientes
+            </h2>
+
+            <p
+              class="mx-auto mt-3 max-w-2xl text-sm leading-6 text-gray-600 md:text-base"
+            >
+              Descubra algunos de los proyectos disponibles en UniLink.
+            </p>
+          </div>
+          <div
+            id="recentOpportunities"
+            class="grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          ></div>
+
+          <!-- Ver todas -->
+          <div class="mt-8 flex justify-center">
+            <a
+              href="pages/opportunities.html"
+              class="inline-flex items-center gap-2 rounded-lg border border-blue-600 px-5 py-3 text-sm font-medium text-blue-600 transition-all duration-150 hover:bg-blue-50 active:scale-95 md:text-base"
+            >
+              Ver todas las oportunidades
+
+              <i data-lucide="arrow-right" class="h-5 w-5"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Para estudiantes -->
+
+      <section id="estudiantes" class="bg-gray-50 py-12 md:py-20">
+        <div class="mx-auto max-w-7xl px-6">
+          <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+            <!-- Contenido -->
+            <div class="flex flex-col items-start gap-6">
+              <div class="flex flex-col gap-3">
                 <h2 class="text-xl font-bold text-gray-800 lg:text-3xl">
-                    ¿Qué busca hacer?
+                  Convierta lo que aprende en experiencia
                 </h2>
 
-                <div class="flex flex-col gap-4 lg:flex lg:flex-row w-full max-w-4xl justify-center">
-                    <article class="flex flex-col gap-4 p-8 border rounded-2xl bg-white border-gray-300 flex-1">
-                        <h3 class="text-lg font-semibold text-gray-800 md:text-2xl">
-                            Soy estudiante
-                        </h3>
-                        <p class="text-sm font-normal text-gray-700 md:text-base">
-                            Encuentre proyectos donde pueda aplicar sus conocimientos y
-                            adquirir experiencia práctica.
-                        </p>
-                        <div>
-                            <button
-                                class="text-sm inline-flex cursor-pointer items-center gap-2 rounded-lg border border-blue-600 bg-blue-600 px-5 py-3 text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-800 active:bg-blue-800 active:scale-95 md:text-base">
-                                Buscar oportunidades
-                            </button>
-                        </div>
-                    </article>
+                <p class="text-sm font-normal text-gray-700 md:text-base">
+                  Encuentre proyectos donde pueda poner en práctica sus
+                  conocimientos, desarrollar nuevas habilidades y construir
+                  experiencia antes de graduarse.
+                </p>
+              </div>
 
-                    <article class="flex flex-col gap-4 p-8 border rounded-2xl bg-white border-gray-300 flex-1">
-                        <h3 class="text-lg font-semibold text-gray-800 md:text-2xl">
-                            Necesito apoyo
-                        </h3>
-                        <p class="text-sm font-normal text-gray-700 md:text-base">
-                            Publique su proyecto o necesidad y encuentre estudiantes que
-                            puedan ayudarle.
-                        </p>
-                        <div>
-                            <button
-                                class="text-sm inline-flex cursor-pointer items-center gap-2 rounded-lg border border-blue-600 bg-blue-600 px-5 py-3 text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-800 active:bg-blue-800 active:scale-95 md:text-base">
-                                Publicar un proyecto
-                            </button>
-                        </div>
-                    </article>
-                </div>
+              <button
+                type="button"
+                class="flex cursor-pointer items-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-sm font-medium text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-700 active:scale-95 md:text-base"
+              >
+                Crear perfil
+              </button>
             </div>
-        </section>
 
-        <!-- Cómo funciona -->
-        <section id="como-funciona" class="py-12 md:py-20">
-            <div class="flex flex-col items-center mx-auto max-w-7xl gap-12 px-6">
+            <!-- Imagen -->
+            <div class="flex justify-center">
+              <img
+                class="h-auto w-full max-w-md rounded-2xl shadow-sm md:max-w-lg"
+                src="./assets/images/students/image-students.webp"
+                alt="Estudiante en UniLink"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Para proyectos -->
+
+      <section id="proyectos" class="py-12 md:py-20">
+        <div class="mx-auto max-w-7xl px-6">
+          <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+            <!-- Imagen -->
+            <div class="order-2 flex justify-center md:order-1">
+              <img
+                class="h-auto w-full max-w-md rounded-2xl shadow-sm md:max-w-lg"
+                src="./assets/images/projects/image-projects.webp"
+                alt="Proyectos en UniLink"
+              />
+            </div>
+
+            <!-- Contenido -->
+            <div class="order-1 flex flex-col items-start gap-6 md:order-2">
+              <div class="flex flex-col gap-3">
                 <h2 class="text-xl font-bold text-gray-800 lg:text-3xl">
-                    ¿Cómo funciona UniLink?
+                  Su proyecto puede encontrar el talento que necesita
                 </h2>
 
-                <div class="flex flex-col items-center justify-center gap-8 lg:flex-row">
-                    <article class="flex flex-col items-center gap-3 text-center">
-                        <div
-                            class="bg-blue-600 w-max px-5 py-3 text-white font-medium rounded-full text-base md:text-lg">
-                            1
-                        </div>
-                        <h4 class="text-gray-800 text-base font-medium md:text-lg">
-                            Cree su perfil
-                        </h4>
-                        <p class="text-sm font-normal text-gray-700 md:text-base max-w-xs">
-                            Muestre sus conocimientos, habilidades y áreas de interés.
-                        </p>
-                    </article>
+                <p class="text-sm font-normal text-gray-700 md:text-base">
+                  Publique una necesidad, proyecto o servicio y conecte con
+                  estudiantes que cuentan con conocimientos relacionados.
+                </p>
+              </div>
 
-                    <article class="flex flex-col items-center gap-3 text-center">
-                        <div
-                            class="bg-blue-600 w-max px-5 py-3 text-white font-medium rounded-full text-base md:text-lg">
-                            2
-                        </div>
-                        <h4 class="text-gray-800 text-base font-medium md:text-lg">
-                            Explore oportunidades
-                        </h4>
-                        <p class="text-sm font-normal text-gray-700 md:text-base max-w-xs">
-                            Encuentre proyectos relacionados con sus conocimientos.
-                        </p>
-                    </article>
-
-                    <article class="flex flex-col items-center gap-3 text-center">
-                        <div
-                            class="bg-blue-600 w-max px-5 py-3 text-white font-medium rounded-full text-base md:text-lg">
-                            3
-                        </div>
-                        <h4 class="text-gray-800 text-base font-medium md:text-lg">
-                            Conecte y gane experiencia
-                        </h4>
-                        <p class="text-sm font-normal text-gray-700 md:text-base max-w-xs">
-                            Participe en proyectos reales y fortalezca su experiencia.
-                        </p>
-                    </article>
-                </div>
+              <button
+                type="button"
+                class="flex cursor-pointer items-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-sm font-medium text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-700 active:scale-95 md:text-base"
+              >
+                Publicar un proyecto
+              </button>
             </div>
-        </section>
-
-        <!-- Oportunidades Recientes -->
-        <section id="recientes" class="py-12 md:py-20 bg-gray-50">
-            <div class="mx-auto flex flex-col max-w-7xl items-center gap-12 px-6">
-                <h2 class="text-xl font-bold text-gray-800 lg:text-3xl">
-                    Oportunidades recientes
-                </h2>
-
-                <!-- Grid con col-span corregido (md:col-span-4 y lg:col-span-3) -->
-                <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-8 lg:grid-cols-12">
-                    <!-- Card 1 -->
-                    <button
-                        class="cursor-pointer col-span-1 md:col-span-4 lg:col-span-3 flex flex-col items-start text-left gap-3 rounded-2xl border border-gray-300 bg-white p-6 transition-all duration-150 select-none touch-manipulation hover:shadow-lg shadow-blue-100 hover:border-blue-300 active:shadow-lg active:shadow-blue-100 active:border-blue-300 active:scale-95">
-                        <div
-                            class="text-xs font-medium rounded-full bg-blue-50 px-4 py-1 text-blue-600 transition-colors md:text-base">
-                            <p>Diseño</p>
-                        </div>
-                        <div class="flex flex-col gap-1 w-full">
-                            <p class="text-base font-medium text-gray-800 md:text-lg">
-                                Diseño de identidad visual
-                            </p>
-                            <div
-                                class="flex flex-wrap items-center gap-2 text-sm font-normal text-gray-500 md:text-base">
-                                <span>Empresa ABC</span>
-                                <span class="text-gray-300">•</span>
-                                <span>Remoto</span>
-                            </div>
-                        </div>
-                    </button>
-
-                    <!-- Card 2 -->
-                    <button
-                        class="cursor-pointer col-span-1 md:col-span-4 lg:col-span-3 flex flex-col items-start text-left gap-3 rounded-2xl border border-gray-300 bg-white p-6 transition-all duration-150 select-none touch-manipulation hover:shadow-lg shadow-blue-100 hover:border-blue-300 active:shadow-lg active:shadow-blue-100 active:border-blue-300 active:scale-95">
-                        <div
-                            class="text-xs font-medium rounded-full bg-blue-50 px-4 py-1 text-blue-600 transition-colors md:text-base">
-                            <p>Desarrollo</p>
-                        </div>
-                        <div class="flex flex-col gap-1 w-full">
-                            <p class="text-base font-medium text-gray-800 md:text-lg">
-                                Desarrollo de página web
-                            </p>
-                            <div
-                                class="flex flex-wrap items-center gap-2 text-sm font-normal text-gray-500 md:text-base">
-                                <span>StartupXYZ</span>
-                                <span class="text-gray-300">•</span>
-                                <span>Híbrido</span>
-                            </div>
-                        </div>
-                    </button>
-
-                    <!-- Card 3 -->
-                    <button
-                        class="cursor-pointer col-span-1 md:col-span-4 lg:col-span-3 flex flex-col items-start text-left gap-3 rounded-2xl border border-gray-300 bg-white p-6 transition-all duration-150 select-none touch-manipulation hover:shadow-lg shadow-blue-100 hover:border-blue-300 active:shadow-lg active:shadow-blue-100 active:border-blue-300 active:scale-95">
-                        <div
-                            class="text-xs font-medium rounded-full bg-blue-50 px-4 py-1 text-blue-600 transition-colors md:text-base">
-                            <p>Marketing</p>
-                        </div>
-                        <div class="flex flex-col gap-1 w-full">
-                            <p class="text-base font-medium text-gray-800 md:text-lg">
-                                Estrategia de redes sociales
-                            </p>
-                            <div
-                                class="flex flex-wrap items-center gap-2 text-sm font-normal text-gray-500 md:text-base">
-                                <span>Café Aroma</span>
-                                <span class="text-gray-300">•</span>
-                                <span>Presencial</span>
-                            </div>
-                        </div>
-                    </button>
-
-                    <!-- Card 4 -->
-                    <button
-                        class="cursor-pointer col-span-1 md:col-span-4 lg:col-span-3 flex flex-col items-start text-left gap-3 rounded-2xl border border-gray-300 bg-white p-6 transition-all duration-150 select-none touch-manipulation hover:shadow-lg shadow-blue-100 hover:border-blue-300 active:shadow-lg active:shadow-blue-100 active:border-blue-300 active:scale-95">
-                        <div
-                            class="text-xs font-medium rounded-full bg-blue-50 px-4 py-1 text-blue-600 transition-colors md:text-base">
-                            <p>Ingeniería</p>
-                        </div>
-                        <div class="flex flex-col gap-1 w-full">
-                            <p class="text-base font-medium text-gray-800 md:text-lg">
-                                Apoyo en análisis de datos
-                            </p>
-                            <div
-                                class="flex flex-wrap items-center gap-2 text-sm font-normal text-gray-500 md:text-base">
-                                <span>DataCo</span>
-                                <span class="text-gray-300">•</span>
-                                <span>Remoto</span>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-
-                <button
-                    class="text-sm inline-flex cursor-pointer items-center gap-2 rounded-lg border border-blue-600 px-5 py-3 text-blue-600 transition-all duration-150 select-none touch-manipulation hover:bg-blue-50 active:bg-blue-50 active:scale-95 md:text-base">
-                    Ver todas las oportunidades
-                    <i data-lucide="arrow-right" class="h-5 w-5"></i>
-                </button>
-            </div>
-        </section>
-
-        <!-- Para estudiantes -->
-        <section id="estudiantes" class="py-12 md:py-20">
-            <div class="mx-auto max-w-7xl px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-                    <div class="flex flex-col items-start gap-6">
-                        <div class="flex flex-col gap-3">
-                            <h2 class="text-xl font-bold text-gray-800 lg:text-3xl">
-                                Convierta lo que aprende en experiencia
-                            </h2>
-                            <p class="text-sm font-normal text-gray-700 md:text-base">
-                                Encuentre proyectos donde pueda poner en práctica sus
-                                conocimientos, desarrollar nuevas habilidades y construir
-                                experiencia antes de graduarse.
-                            </p>
-                        </div>
-                        <div>
-                            <button
-                                class="text-sm inline-flex cursor-pointer items-center gap-2 rounded-lg border border-blue-600 bg-blue-600 px-5 py-3 text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-800 active:bg-blue-800 active:scale-95 md:text-base">
-                                Crear perfil
-                            </button>
-                        </div>
-                    </div>
-                    <div class="flex justify-center">
-                        <img class="h-auto w-full max-w-md md:max-w-lg rounded-2xl shadow-sm"
-                            src="./assets/images/students/image-students.webp" alt="Estudiante en UniLink" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Para proyectos -->
-        <section id="proyectos" class="py-12 md:py-20 bg-gray-50">
-            <div class="mx-auto max-w-7xl px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-                    <div class="flex justify-center order-2 md:order-1">
-                        <img class="h-auto w-full max-w-md md:max-w-lg rounded-2xl shadow-sm"
-                            src="./assets/images/projects/image-projects.webp" alt="Proyectos en UniLink" />
-                    </div>
-                    <div class="flex flex-col items-start gap-6 order-1 md:order-2">
-                        <div class="flex flex-col gap-3">
-                            <h2 class="text-xl font-bold text-gray-800 lg:text-3xl">
-                                Su proyecto puede encontrar el talento que necesita
-                            </h2>
-                            <p class="text-sm font-normal text-gray-700 md:text-base">
-                                Publique una necesidad, proyecto o servicio y conecte con
-                                estudiantes que cuentan con conocimientos relacionados.
-                            </p>
-                        </div>
-                        <div>
-                            <button
-                                class="text-sm inline-flex cursor-pointer items-center gap-2 rounded-lg border border-blue-600 bg-blue-600 px-5 py-3 text-white transition-all duration-150 select-none touch-manipulation hover:bg-blue-800 active:bg-blue-800 active:scale-95 md:text-base">
-                                Publicar un proyecto
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="py-8 bg-white border-t border-gray-200">
-        <div class="mx-auto max-w-7xl px-6">
-            <p class="text-sm text-gray-600">&copy; 2026 UniLink. Todos los derechos reservados</p>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
-    <!-- Script principal e inicialización de iconos -->
+    <!-- Scripts -->
+    <script src="js/components/button.js"></script>
+    <script src="js/components/card.js"></script>
+    <script src="js/components/skeleton.js"></script>
+    <script src="js/pages/home.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-
+  </body>
 </html>

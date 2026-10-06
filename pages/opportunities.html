@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oportunidades | UniLink</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body
+    class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900"
+  >
+    <!-- NAVBAR -->
+    <div id="navBar"></div>
+
+    <main id="mainContent">
+      <!-- ========================================================= -->
+      <!-- HEADER -->
+      <!-- ========================================================= -->
+      <section
+        class="border-b border-slate-200/80 bg-white py-10 sm:py-12 lg:py-14"
+      >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <h1
+              class="text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl"
+            >
+              Oportunidades
+            </h1>
+
+            <p
+              class="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base md:text-bse"
+            >
+              Conecte sus conocimientos universitarios con proyectos y retos
+              reales. Desarrolle sus habilidades y gane experiencia práctica.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- SECCIÓN DE FILTROS (STICKY + ACCESIBLE) -->
+      <!-- ========================================================= -->
+      <section
+        aria-label="Filtros y búsqueda de oportunidades"
+        class="top-0 z-30 border-b border-slate-200/90 bg-white/95 backdrop-blur-md transition-shadow"
+      >
+        <div
+          class="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-5 lg:px-8 space-y-4"
+        >
+          <!-- BUSCADOR -->
+          <div class="relative">
+            <label for="searchInput" class="sr-only">
+              Buscar oportunidades por rol, empresa o habilidad
+            </label>
+
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-500"
+            >
+              <i data-lucide="search" class="h-5 w-5" aria-hidden="true"></i>
+            </div>
+
+            <input
+              type="text"
+              id="searchInput"
+              autocomplete="off"
+              placeholder="Buscar por rol, empresa o habilidad (ej. React, UX, Remoto)..."
+              class="h-11 w-full rounded-xl border border-slate-300 bg-slate-50/60 pl-11 pr-11 text-sm md:text-base text-slate-900 shadow-xs transition-colors placeholder:text-slate-500 hover:border-slate-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-4 focus:ring-blue-100"
+            />
+
+            <button
+              id="clearSearchBtn"
+              type="button"
+              class="hidden absolute inset-y-0 right-0 items-center justify-center pr-3.5 text-slate-500 transition hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded-lg m-1"
+              aria-label="Borrar texto de búsqueda"
+            >
+              <i data-lucide="x" class="h-4 w-4" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <!-- CATEGORÍAS -->
+          <div>
+            <div class="mb-2 flex items-center justify-between">
+              <span
+                id="categoryLabel"
+                class="text-xs font-bold uppercase tracking-wider text-slate-700"
+              >
+                Categoría
+              </span>
+              <span class="text-xs text-slate-500 hidden sm:inline"
+                >Seleccione para filtrar</span
+              >
+            </div>
+
+            <div
+              id="categoryChips"
+              role="group"
+              aria-labelledby="categoryLabel"
+              class="flex gap-2 overflow-x-auto pb-1 pt-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:flex-wrap"
+            >
+              <button
+                type="button"
+                data-category="all"
+                aria-pressed="true"
+                class="category-btn active inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-blue-600 bg-blue-600 px-3.5 py-2 text-xs md:text-sm font-semibold text-white shadow-xs transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+              >
+                <i
+                  data-lucide="sparkles"
+                  class="h-3.5 w-3.5"
+                  aria-hidden="true"
+                ></i>
+                <span>Todas</span>
+              </button>
+
+              <button
+                type="button"
+                data-category="Diseño"
+                aria-pressed="false"
+                class="category-btn inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-xs md:text-sm font-semibold text-slate-700 shadow-xs transition-all duration-150 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+              >
+                <i
+                  data-lucide="palette"
+                  class="h-3.5 w-3.5 text-pink-600"
+                  aria-hidden="true"
+                ></i>
+                <span>Diseño</span>
+              </button>
+
+              <button
+                type="button"
+                data-category="Desarrollo"
+                aria-pressed="false"
+                class="category-btn inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-xs md:text-sm font-semibold text-slate-700 shadow-xs transition-all duration-150 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+              >
+                <i
+                  data-lucide="code-2"
+                  class="h-3.5 w-3.5 text-blue-600"
+                  aria-hidden="true"
+                ></i>
+                <span>Desarrollo</span>
+              </button>
+
+              <button
+                type="button"
+                data-category="Marketing"
+                aria-pressed="false"
+                class="category-btn inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-xs md:text-sm font-semibold text-slate-700 shadow-xs transition-all duration-150 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+              >
+                <i
+                  data-lucide="megaphone"
+                  class="h-3.5 w-3.5 text-amber-700"
+                  aria-hidden="true"
+                ></i>
+                <span>Marketing</span>
+              </button>
+
+              <button
+                type="button"
+                data-category="Ingeniería"
+                aria-pressed="false"
+                class="category-btn inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-xs md:text-sm font-semibold text-slate-700 shadow-xs transition-all duration-150 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+              >
+                <i
+                  data-lucide="cpu"
+                  class="h-3.5 w-3.5 text-indigo-700"
+                  aria-hidden="true"
+                ></i>
+                <span>Ingeniería</span>
+              </button>
+
+              <button
+                type="button"
+                data-category="Investigación"
+                aria-pressed="false"
+                class="category-btn inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-xs md:text-sm font-semibold text-slate-700 shadow-xs transition-all duration-150 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+              >
+                <i
+                  data-lucide="microscope"
+                  class="h-3.5 w-3.5 text-emerald-700"
+                  aria-hidden="true"
+                ></i>
+                <span>Investigación</span>
+              </button>
+
+              <button
+                type="button"
+                data-category="Contenido"
+                aria-pressed="false"
+                class="category-btn inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-xs md:text-sm font-semibold text-slate-700 shadow-xs transition-all duration-150 hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+              >
+                <i
+                  data-lucide="file-text"
+                  class="h-3.5 w-3.5 text-purple-700"
+                  aria-hidden="true"
+                ></i>
+                <span>Contenido</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- CONTROLES INFERIORES: MODALIDAD Y ORDENAMIENTO -->
+          <div
+            class="flex flex-col gap-3.5 pt-3 border-t border-slate-200/70 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <!-- MODALIDAD -->
+            <div
+              class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            >
+              <span
+                id="modalityLabel"
+                class="shrink-0 text-xs font-bold uppercase tracking-wider text-slate-700 mr-1"
+              >
+                Modalidad:
+              </span>
+              <div
+                id="modalityGroup"
+                role="group"
+                aria-labelledby="modalityLabel"
+                class="inline-flex shrink-0 rounded-xl border border-slate-300/80 bg-slate-100/90 p-1"
+              >
+                <button
+                  type="button"
+                  data-modality="all"
+                  aria-pressed="true"
+                  class="modality-btn active rounded-lg bg-white px-3 py-1.5 text-xs md:text-sm font-semibold text-slate-950 shadow-xs transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                >
+                  Todas
+                </button>
+                <button
+                  type="button"
+                  data-modality="Remoto"
+                  aria-pressed="false"
+                  class="modality-btn rounded-lg px-3 py-1.5 text-xs md:text-sm font-semibold text-slate-600 transition hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                >
+                  Remoto
+                </button>
+                <button
+                  type="button"
+                  data-modality="Híbrido"
+                  aria-pressed="false"
+                  class="modality-btn rounded-lg px-3 py-1.5 text-xs md:text-sm font-semibold text-slate-600 transition hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                >
+                  Híbrido
+                </button>
+                <button
+                  type="button"
+                  data-modality="Presencial"
+                  aria-pressed="false"
+                  class="modality-btn rounded-lg px-3 py-1.5 text-xs md:text-sm font-semibold text-slate-600 transition hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
+                >
+                  Presencial
+                </button>
+              </div>
+            </div>
+
+            <!-- RESULTADOS Y ORDEN -->
+            <div class="flex items-center justify-between gap-4 sm:justify-end">
+              <!-- Contador con Live Region para Lectores de Pantalla -->
+              <p
+                id="resultsCount"
+                role="status"
+                aria-live="polite"
+                class="text-xs md:text-sm font-semibold text-slate-700"
+              >
+                Cargando oportunidades...
+              </p>
+
+              <div
+                class="h-4 w-px bg-slate-300 hidden sm:block"
+                aria-hidden="true"
+              ></div>
+
+              <div class="flex items-center gap-2">
+                <label
+                  for="sortFilter"
+                  class="text-xs md:text-sm font-medium text-slate-600 whitespace-nowrap"
+                >
+                  Ordenar por:
+                </label>
+                <div class="relative">
+                  <select
+                    id="sortFilter"
+                    class="h-9 appearance-none cursor-pointer rounded-xl border border-slate-300 bg-white pl-3 pr-8 text-xs md:text-sm font-semibold text-slate-800 shadow-xs transition hover:border-slate-400 focus:border-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-100"
+                  >
+                    <option value="newest">Más recientes</option>
+                    <option value="oldest">Más antiguas</option>
+                  </select>
+                  <i
+                    data-lucide="chevron-down"
+                    class="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-slate-500"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- RESULTADOS -->
+      <!-- ========================================================= -->
+      <section class="py-8 sm:py-12 lg:py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div
+            id="opportunitiesGrid"
+            class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            aria-live="polite"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../js/components/button.js"></script>
+    <script src="../js/components/card.js"></script>
+    <script src="../js/components/skeleton.js"></script>
+    <script src="../js/pages/opportunities.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

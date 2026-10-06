@@ -1,0 +1,134 @@
+[
+  {
+    "category": "Diseño",
+    "company": "Mercado Libre",
+    "title": "Diseñador UX/UI Junior",
+    "logo": "../assets/svg/logos/mercadolibre.svg",
+    "description": "Diseñar y optimizar flujos de experiencia de usuario para componentes de la plataforma móvil.",
+    "skills": ["UX/UI", "Figma", "Design Systems"],
+    "modality": "Remoto",
+    "date": "22 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Desarrollo",
+    "company": "Globant",
+    "title": "Desarrollador Front-End Trainee",
+    "logo": "../assets/svg/logos/globant-vector-logo.svg",
+    "description": "Apoyar el desarrollo de interfaces web escalables en proyectos para clientes internacionales.",
+    "skills": ["HTML", "CSS", "JavaScript", "React"],
+    "modality": "Híbrido",
+    "date": "20 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Marketing",
+    "company": "Rappi",
+    "title": "Asistente de Growth & Digital Marketing",
+    "logo": "../assets/svg/logos/Rappi.svg",
+    "description": "Colaborar en la ejecución de campañas digitales, creación de contenido y análisis de métricas clave.",
+    "skills": ["Marketing Digital", "Social Media", "Canva", "Copywriting"],
+    "modality": "Remoto",
+    "date": "18 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Desarrollo",
+    "company": "Bancolombia",
+    "title": "Desarrollador JavaScript Junior",
+    "logo": "../assets/svg/logos/bancolombia.svg",
+    "description": "Participar en la integración de servicios web y desarrollo de funcionalidades para canales digitales.",
+    "skills": ["JavaScript", "Git", "Node.js", "APIs REST"],
+    "modality": "Híbrido",
+    "date": "17 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Administración",
+    "company": "Grupo Nutresa",
+    "title": "Auxiliar Administrativo",
+    "logo": "../assets/svg/logos/grupo-nutresa-seeklogo-2.svg",
+    "description": "Gestionar documentación operativa, reportes de gestión e indicadores administrativos internos.",
+    "skills": ["Excel Avanzado", "Gestión Documental", "SAP"],
+    "modality": "Presencial",
+    "date": "15 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Datos",
+    "company": "Telefónica Movistar",
+    "title": "Analista de Datos Junior",
+    "logo": "../assets/svg/logos/logo-movistar.svg",
+    "description": "Construir tableros de control y analizar datos masivos para apoyar la toma de decisiones del área.",
+    "skills": ["SQL", "Power BI", "Excel", "Python"],
+    "modality": "Híbrido",
+    "date": "14 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Comunicación",
+    "company": "Platzi",
+    "title": "Creador de Contenido Digital",
+    "logo": "../assets/svg/logos/platzi.svg",
+    "description": "Redactar y producir piezas educativas/promocionales para diferentes canales de comunicación.",
+    "skills": ["Redacción", "Content Marketing", "Canva", "Redes Sociales"],
+    "modality": "Remoto",
+    "date": "12 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Ingeniería",
+    "company": "Siemens",
+    "title": "Practicante / Asistente de Ingeniería",
+    "logo": "../assets/svg/logos/siemens.svg",
+    "description": "Apoyar la elaboración de planos técnicos y documentación en proyectos de automatización e infraestructura.",
+    "skills": ["AutoCAD", "Excel", "Gestión de Proyectos"],
+    "modality": "Presencial",
+    "date": "10 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Fotografía",
+    "company": "Falabella",
+    "title": "Asistente de Fotografía e Imagen",
+    "logo": "../assets/svg/logos/cmr-falabella.svg",
+    "description": "Asistir en la preparación de sets, iluminación y retoque fotográfico para catálogo e-commerce.",
+    "skills": ["Fotografía Studio", "Lightroom", "Photoshop"],
+    "modality": "Presencial",
+    "date": "8 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Finanzas",
+    "company": "Deloitte",
+    "title": "Analista Financiero Junior",
+    "logo": "../assets/svg/logos/deloitte.svg",
+    "description": "Elaborar modelos de proyección financiera, auditoría preliminar y análisis de datos contables.",
+    "skills": ["Excel", "Análisis Financiero", "Modelación"],
+    "modality": "Híbrido",
+    "date": "6 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Investigación",
+    "company": "Kantar",
+    "title": "Asistente de Investigación de Mercados",
+    "logo": "../assets/svg/logos/Kantar_Group_logo.svg.webp",
+    "description": "Recopilar y procesar información cualitativa y cuantitativa sobre tendencias de consumo.",
+    "skills": ["Investigación de Mercado", "Análisis de Datos", "Redacción"],
+    "modality": "Remoto",
+    "date": "4 noviembre 2026",
+    "url": "opportunity-detail.html"
+  },
+  {
+    "category": "Video",
+    "company": "Caracol Televisión",
+    "title": "Editor de Video Junior",
+    "logo": "../assets/svg/logos/Caracol_Televisión_logo.svg.webp",
+    "description": "Editar material audiovisual y adaptar formatos para distribución en plataformas digitales y redes.",
+    "skills": ["Adobe Premiere", "After Effects", "Edición Audiovisual"],
+    "modality": "Híbrido",
+    "date": "2 noviembre 2026",
+    "url": "opportunity-detail.html"
+  }
+]
