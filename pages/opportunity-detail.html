@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle de Oportunidad | UniLink</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body
+    class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 flex min-h-screen flex-col"
+  >
+    <!-- NAVBAR -->
+    <div id="navBar"></div>
+
+    <!-- MAIN CONTENT -->
+    <main id="mainContent" class="flex-1">
+      <!-- BREADCRUMB -->
+      <nav
+        aria-label="Migas de pan"
+        class="border-b border-slate-200 bg-white py-3.5 text-xs sm:text-sm"
+      >
+        <div class="mx-auto flex max-w-7xl items-center gap-2 px-4 sm:px-6 lg:px-8 text-slate-500">
+          <a
+            href="../index.html"
+            class="hover:text-blue-600 transition flex items-center gap-1"
+          >
+            <i data-lucide="home" class="h-4 w-4"></i>
+            Inicio
+          </a>
+          <span class="text-slate-400">/</span>
+          <a
+            href="opportunities.html"
+            class="hover:text-blue-600 transition"
+          >
+            Oportunidades
+          </a>
+          <span class="text-slate-400">/</span>
+          <span
+            id="breadcrumbTitle"
+            class="font-medium text-slate-800 truncate max-w-xs sm:max-w-md"
+          >
+            Cargando oportunidad...
+          </span>
+        </div>
+      </nav>
+
+      <!-- CONTENEDOR DINÁMICO DE DETALLE -->
+      <div
+        id="opportunityDetailContainer"
+        class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8"
+        aria-live="polite"
+      >
+        <!-- SKELETON LOADER POR DEFECTO -->
+        <div id="detailSkeleton" class="animate-pulse space-y-6">
+          <div class="h-6 w-36 rounded bg-slate-200"></div>
+          
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+            <div class="flex flex-col gap-6 md:flex-row md:items-center">
+              <div class="h-20 w-20 rounded-2xl bg-slate-200"></div>
+              <div class="flex-1 space-y-3">
+                <div class="h-5 w-28 rounded bg-slate-200"></div>
+                <div class="h-8 w-3/4 rounded bg-slate-200"></div>
+                <div class="h-4 w-1/2 rounded bg-slate-200"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-3">
+            <div class="space-y-6 lg:col-span-2">
+              <div class="rounded-2xl border border-slate-200 bg-white p-6 space-y-4">
+                <div class="h-6 w-48 rounded bg-slate-200"></div>
+                <div class="h-4 w-full rounded bg-slate-200"></div>
+                <div class="h-4 w-5/6 rounded bg-slate-200"></div>
+                <div class="h-4 w-4/6 rounded bg-slate-200"></div>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div class="rounded-2xl border border-slate-200 bg-white p-6 space-y-4">
+                <div class="h-6 w-36 rounded bg-slate-200"></div>
+                <div class="h-10 w-full rounded bg-slate-200"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MODAL DE POSTULACIÓN -->
+    <div
+      id="applyModal"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 p-4 backdrop-blur-xs"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div
+        class="relative w-full max-w-lg rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl sm:p-8"
+      >
+        <!-- BOTÓN CERRAR -->
+        <button
+          id="closeModalBtn"
+          type="button"
+          class="absolute top-5 right-5 rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600 transition"
+          aria-label="Cerrar ventana de postulación"
+        >
+          <i data-lucide="x" class="h-5 w-5"></i>
+        </button>
+
+        <!-- CABECERA MODAL -->
+        <div class="mb-5 pr-8">
+          <span class="inline-block rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+            Postulación en línea
+          </span>
+          <h2 id="modalTitle" class="mt-2 text-xl font-bold text-slate-900">
+            Postularme a esta oportunidad
+          </h2>
+          <p id="modalSubtitle" class="text-xs sm:text-sm text-slate-500 mt-1">
+            Sus datos se compartirán directamente con el reclutador de la empresa.
+          </p>
+        </div>
+
+        <!-- FORMULARIO -->
+        <form id="applyForm" class="space-y-4">
+          <div>
+            <label for="applicantName" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+              Nombre Completo *
+            </label>
+            <input
+              type="text"
+              id="applicantName"
+              required
+              placeholder="Ej. Juan Pérez García"
+              class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="applicantEmail" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                Correo Institucional *
+              </label>
+              <input
+                type="email"
+                id="applicantEmail"
+                required
+                placeholder="estudiante@universidad.edu.co"
+                class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label for="applicantPhone" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                Teléfono / WhatsApp *
+              </label>
+              <input
+                type="tel"
+                id="applicantPhone"
+                required
+                placeholder="Ej. 300 123 4567"
+                class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="applicantCareer" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                Carrera / Programa *
+              </label>
+              <input
+                type="text"
+                id="applicantCareer"
+                required
+                placeholder="Ej. Ingeniería de Sistemas"
+                class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label for="applicantSemester" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                Semestre Actual *
+              </label>
+              <select
+                id="applicantSemester"
+                required
+                class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition bg-white"
+              >
+                <option value="">Seleccione</option>
+                <option value="4">4° Semestre</option>
+                <option value="5">5° Semestre</option>
+                <option value="6" selected>6° Semestre</option>
+                <option value="7">7° Semestre</option>
+                <option value="8">8° Semestre</option>
+                <option value="9">9° Semestre</option>
+                <option value="10">10° Semestre o más</option>
+                <option value="egresado">Recién Egresado</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="applicantPortfolio" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+              Enlace a Portafolio / GitHub / LinkedIn
+            </label>
+            <input
+              type="url"
+              id="applicantPortfolio"
+              placeholder="https://github.com/usuario o https://linkedin.com/in/..."
+              class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition"
+            />
+          </div>
+
+          <div>
+            <label for="applicantMessage" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+              ¿Por qué te interesa esta vacante?
+            </label>
+            <textarea
+              id="applicantMessage"
+              rows="3"
+              placeholder="Breve motivación de por qué eres el estudiante ideal para este proyecto..."
+              class="w-full rounded-xl border border-slate-300 px-3.5 py-2 text-sm focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none"
+            ></textarea>
+          </div>
+
+          <div class="pt-2 flex flex-col-reverse sm:flex-row gap-3">
+            <button
+              type="button"
+              id="cancelModalBtn"
+              class="w-full sm:w-auto px-5 py-2.5 text-sm font-semibold text-slate-600 hover:bg-slate-100 rounded-xl transition"
+            >
+              Cancelar
+            </button>
+            <button
+              type="submit"
+              id="submitModalBtn"
+              class="flex-1 flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-700 transition active:scale-95"
+            >
+              <i data-lucide="send" class="h-4 w-4"></i>
+              Enviar postulación
+            </button>
+          </div>
+        </form>
+
+        <!-- MENSAJE DE ÉXITO TRAS POSTULARSE -->
+        <div id="modalSuccess" class="hidden text-center py-6 space-y-4">
+          <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+            <i data-lucide="check-circle-2" class="h-8 w-8"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900">
+            ¡Postulación enviada con éxito!
+          </h3>
+          <p class="text-sm text-slate-600 max-w-sm mx-auto">
+            Hemos registrado tu postulación. El reclutador recibirá tu perfil y se pondrá en contacto a través de tu correo institucional.
+          </p>
+          <div class="pt-4">
+            <button
+              type="button"
+              id="successCloseBtn"
+              class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 transition"
+            >
+              Entendido
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST NOTIFICACIÓN -->
+    <div
+      id="toastNotification"
+      class="fixed bottom-5 right-5 z-50 hidden items-center gap-3 rounded-xl bg-slate-900 px-4 py-3 text-sm text-white shadow-xl transition-all"
+      role="status"
+    >
+      <i id="toastIcon" data-lucide="check" class="h-5 w-5 text-emerald-400"></i>
+      <span id="toastMessage">Enlace copiado al portapapeles</span>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../js/components/button.js"></script>
+    <script src="../js/components/card.js"></script>
+    <script src="../js/components/skeleton.js"></script>
+    <script src="../js/pages/opportunity-detail.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,134 +1,422 @@
 [
   {
+    "id": 1,
     "category": "Diseño",
     "company": "Mercado Libre",
     "title": "Diseñador UX/UI Junior",
     "logo": "../assets/svg/logos/mercadolibre.svg",
     "description": "Diseñar y optimizar flujos de experiencia de usuario para componentes de la plataforma móvil.",
-    "skills": ["UX/UI", "Figma", "Design Systems"],
+    "companyDescription": "Mercado Libre es la compañía de comercio electrónico y servicios financieros líder en América Latina, impulsando la inclusión financiera y el comercio digital.",
+    "location": "Remoto - Todo Colombia",
     "modality": "Remoto",
+    "workload": "Medio tiempo (20h/semana)",
+    "duration": "6 meses",
+    "vacancies": 2,
     "date": "22 noviembre 2026",
+    "skills": ["UX/UI", "Figma", "Design Systems"],
+    "requirements": [
+      "Estudiante universitario de Diseño Gráfico, Diseño Interactivo o carreras afines (a partir de 5to semestre).",
+      "Manejo sólido de Figma (componentes, auto-layout y variantes).",
+      "Conocimientos en metodologías de Design Thinking e investigación con usuarios.",
+      "Portafolio digital con al menos dos casos de estudio de interfaces web o móviles."
+    ],
+    "responsibilities": [
+      "Diseñar prototipos interactivos de alta fidelidad para nuevas funcionalidades.",
+      "Participar en sesiones de investigación cualitativa y pruebas de usabilidad con usuarios.",
+      "Documentar componentes en el sistema de diseño compartido de la compañía.",
+      "Colaborar mano a mano con el equipo de producto y desarrollo front-end."
+    ],
+    "benefits": [
+      "Auxilio de conectividad y bono mensual de práctica.",
+      "Horarios 100% flexibles adaptables al horario de clases.",
+      "Acceso a mentorías directas con diseñadores senior de la región.",
+      "Certificado formal de prácticas pre-profesionales para la universidad."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 2,
     "category": "Desarrollo",
     "company": "Globant",
     "title": "Desarrollador Front-End Trainee",
     "logo": "../assets/svg/logos/globant-vector-logo.svg",
     "description": "Apoyar el desarrollo de interfaces web escalables en proyectos para clientes internacionales.",
-    "skills": ["HTML", "CSS", "JavaScript", "React"],
+    "companyDescription": "Globant es una empresa digital líder que ayuda a las organizaciones a transformarse y reinventarse a través de soluciones tecnológicas innovadoras.",
+    "location": "Bogotá / Medellín, Colombia (Híbrido)",
     "modality": "Híbrido",
+    "workload": "Práctica Profesional / 30h semanales",
+    "duration": "6 meses prorrogables",
+    "vacancies": 3,
     "date": "20 noviembre 2026",
+    "skills": ["HTML", "CSS", "JavaScript", "React"],
+    "requirements": [
+      "Estudiante de Ingeniería de Sistemas, Software, Telemática o afines.",
+      "Bases sólidas en JavaScript moderno (ES6+), HTML5 semántico y CSS3 / Tailwind.",
+      "Nociones básicas de React.js y manejo de Git/GitHub.",
+      "Nivel de inglés intermedio (B1 o superior) para interacción con equipos multinacionales."
+    ],
+    "responsibilities": [
+      "Construir componentes reutilizables y responsivos bajo estándares de accesibilidad.",
+      "Consumir APIs RESTful y manejar estados en aplicaciones cliente.",
+      "Realizar pruebas unitarias básicas y participar en revisiones de código (Code Reviews).",
+      "Integrarse en ceremonias ágiles (Scrum/Kanban) dentro de un equipo global."
+    ],
+    "benefits": [
+      "Subsidio económico de práctica competitiva.",
+      "Plan de formación continua y certificaciones técnicas cubiertas.",
+      "Ambiente multicultural y cultura de innovación continua.",
+      "Oportunidad de contratación indefinida al finalizar el periodo de práctica."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 3,
     "category": "Marketing",
     "company": "Rappi",
     "title": "Asistente de Growth & Digital Marketing",
     "logo": "../assets/svg/logos/Rappi.svg",
     "description": "Colaborar en la ejecución de campañas digitales, creación de contenido y análisis de métricas clave.",
-    "skills": ["Marketing Digital", "Social Media", "Canva", "Copywriting"],
+    "companyDescription": "Rappi es la superapp latinoamericana que conecta a millones de usuarios con restaurantes, supermercados, farmacias y servicios financieros al instante.",
+    "location": "Remoto - Colombia",
     "modality": "Remoto",
+    "workload": "Medio tiempo (20h/semana)",
+    "duration": "4 a 6 meses",
+    "vacancies": 1,
     "date": "18 noviembre 2026",
+    "skills": ["Marketing Digital", "Social Media", "Canva", "Copywriting"],
+    "requirements": [
+      "Estudiante de Comunicación Social, Mercadeo, Publicidad o Administración.",
+      "Excelente redacción, ortografía y capacidad creativa de storytelling.",
+      "Manejo de herramientas como Canva, Notion y suites de analítica en redes.",
+      "Pasión por el ecosistema de startups y hábitos de compra del consumidor digital."
+    ],
+    "responsibilities": [
+      "Monitorear indicadores de rendimiento (CTR, CPA, conversión) de campañas en curso.",
+      "Diseñar copys persuasivos y piezas visuales para canales de adquisición.",
+      "Coordinar activaciones digitales con micro-influenciadores y aliados locales.",
+      "Elaborar reportes semanales de métricas con propuestas de optimización de crecimiento."
+    ],
+    "benefits": [
+      "Créditos mensuales en RappiPrime y beneficios de la app.",
+      "Entrenamiento en metodologías avanzadas de Growth Hacking.",
+      "Flexibilidad horaria según calendario de parciales y exámenes.",
+      "Certificación de horas de práctica profesional."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 4,
     "category": "Desarrollo",
     "company": "Bancolombia",
     "title": "Desarrollador JavaScript Junior",
     "logo": "../assets/svg/logos/bancolombia.svg",
     "description": "Participar en la integración de servicios web y desarrollo de funcionalidades para canales digitales.",
-    "skills": ["JavaScript", "Git", "Node.js", "APIs REST"],
+    "companyDescription": "Bancolombia es la institución financiera más grande del país, comprometida en promover el desarrollo económico sostenible para lograr el bienestar de todos.",
+    "location": "Medellín / Bogotá (Híbrido 2 días presencial)",
     "modality": "Híbrido",
+    "workload": "Tiempo completo / Práctica SENA o Universitaria",
+    "duration": "6 meses",
+    "vacancies": 2,
     "date": "17 noviembre 2026",
+    "skills": ["JavaScript", "Git", "Node.js", "APIs REST"],
+    "requirements": [
+      "Estudiante universitario en últimos semestres habilitado para realizar prácticas.",
+      "Comprensión de programación asíncrona (Promises, async/await).",
+      "Familiaridad con backend en Node.js o frontend en frameworks modernos.",
+      "Enfoque riguroso en seguridad de la información y buenas prácticas de desarrollo."
+    ],
+    "responsibilities": [
+      "Desarrollar y mantener endpoints REST para el consumo de canales web y móviles.",
+      "Resolver incidencias técnicas y refactorizar código bajo estándares bancarios.",
+      "Aportar en pruebas de integración y verificación de calidad de software.",
+      "Colaborar con analistas de negocio en la definición de requerimientos técnicos."
+    ],
+    "benefits": [
+      "Auxilio de práctica del 100% de SMMLV + afiliación a EPS y ARL.",
+      "Acceso a plataformas educativas de clase mundial (Coursera, Udemy).",
+      "Programa de mentoría técnica con arquitectos de software.",
+      "Plan preferencial de servicios y cuentas de ahorro."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 5,
     "category": "Administración",
     "company": "Grupo Nutresa",
     "title": "Auxiliar Administrativo",
     "logo": "../assets/svg/logos/grupo-nutresa-seeklogo-2.svg",
     "description": "Gestionar documentación operativa, reportes de gestión e indicadores administrativos internos.",
-    "skills": ["Excel Avanzado", "Gestión Documental", "SAP"],
+    "companyDescription": "Grupo Nutresa es la empresa líder en alimentos procesados en Colombia y uno de los jugadores más relevantes del sector en América Latina.",
+    "location": "Medellín, Antioquia (Sede Principal)",
     "modality": "Presencial",
+    "workload": "Medio tiempo / 25h semanales",
+    "duration": "6 meses",
+    "vacancies": 1,
     "date": "15 noviembre 2026",
+    "skills": ["Excel Avanzado", "Gestión Documental", "SAP"],
+    "requirements": [
+      "Estudiante de Administración de Empresas, Ingeniería Industrial o Contaduría.",
+      "Manejo fluido de Microsoft Excel (tablas dinámicas, fórmulas lógicas y cruces de datos).",
+      "Alta capacidad de organización, atención al detalle y sentido de confidencialidad.",
+      "Disponibilidad para asistir a la sede administrativa en horarios coordinados."
+    ],
+    "responsibilities": [
+      "Organizar y archivar expedientes digitales y físicos de operaciones comerciales.",
+      "Elaborar reportes ejecutivos semanales de seguimiento presupuestal.",
+      "Apoyar el ingreso y conciliación de órdenes de compra en el ERP empresarial.",
+      "Gestionar la correspondencia y comunicación interna entre dependencias operativas."
+    ],
+    "benefits": [
+      "Subsidio de transporte y auxilio de alimentación en casino corporativo.",
+      "Descuento en compras de productos de marcas Nutresa.",
+      "Oportunidad de desarrollo y crecimiento en el grupo empresarial.",
+      "Convenio interinstitucional con respaldo universitario."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 6,
     "category": "Datos",
     "company": "Telefónica Movistar",
     "title": "Analista de Datos Junior",
     "logo": "../assets/svg/logos/logo-movistar.svg",
     "description": "Construir tableros de control y analizar datos masivos para apoyar la toma de decisiones del área.",
-    "skills": ["SQL", "Power BI", "Excel", "Python"],
+    "companyDescription": "Telefónica Movistar es un referente global de telecomunicaciones que conecta a personas y empresas a través de tecnología y conectividad de alta velocidad.",
+    "location": "Bogotá, Colombia (Híbrido)",
     "modality": "Híbrido",
+    "workload": "Tiempo Parcial (20h/semana)",
+    "duration": "6 meses",
+    "vacancies": 2,
     "date": "14 noviembre 2026",
+    "skills": ["SQL", "Power BI", "Excel", "Python"],
+    "requirements": [
+      "Estudiante de Estadística, Ingeniería de Sistemas, Economía, Matemáticas o afines.",
+      "Capacidad para formular consultas SQL (agrupaciones, joins, subconsultas).",
+      "Experiencia práctica creando dashboards interactivos en Power BI o Tableau.",
+      "Curiosidad analítica y capacidad de comunicar hallazgos cuantitativos."
+    ],
+    "responsibilities": [
+      "Extraer y limpiar datos provenientes de múltiples repositorios relacionales.",
+      "Diseñar y actualizar tableros de control con KPIs clave de uso y clientes.",
+      "Automatizar reportes periódicos mediante scripts sencillos de Python.",
+      "Presentar conclusiones y recomendaciones a líderes de producto y marketing."
+    ],
+    "benefits": [
+      "Plan de telefonía móvil y datos ilimitados corporativo.",
+      "Auxilio económico mensual de sostenimiento.",
+      "Tutoría personalizada con Data Scientists de alto nivel.",
+      "Flexibilidad total para época de parciales y entregas académicas."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 7,
     "category": "Comunicación",
     "company": "Platzi",
     "title": "Creador de Contenido Digital",
     "logo": "../assets/svg/logos/platzi.svg",
     "description": "Redactar y producir piezas educativas/promocionales para diferentes canales de comunicación.",
-    "skills": ["Redacción", "Content Marketing", "Canva", "Redes Sociales"],
+    "companyDescription": "Platzi es la plataforma de educación profesional en tecnología más grande del mundo hispanohablante, transformando la economía regional a través del aprendizaje.",
+    "location": "Remoto - Latinoamérica",
     "modality": "Remoto",
+    "workload": "Medio tiempo (20h/semana)",
+    "duration": "4 a 6 meses",
+    "vacancies": 1,
     "date": "12 noviembre 2026",
+    "skills": ["Redacción", "Content Marketing", "Canva", "Redes Sociales"],
+    "requirements": [
+      "Estudiante de Periodismo, Comunicación Audiovisual, Marketing o Humanidades.",
+      "Habilidad para sintetizar conceptos tecnológicos complejos en formatos digeribles.",
+      "Experiencia demostrable creando contenido para TikTok, YouTube, X o newsletters.",
+      "Capacidad de autogestión y trabajo en equipo multidisciplinario remoto."
+    ],
+    "responsibilities": [
+      "Investigar temas de vanguardia tecnológica para generar guiones y artículos.",
+      "Producir y editar piezas cortas de video y carruseles para redes sociales.",
+      "Interactuar con la comunidad de estudiantes y responder a tendencias emergentes.",
+      "Analizar el alcance y retención de cada publicación para optimizar la estrategia."
+    ],
+    "benefits": [
+      "Suscripción Platzi Expert ilimitada para ti y un familiar.",
+      "Compensación económica en dólares o moneda local.",
+      "Entorno de trabajo flexible, 100% asíncrono y creativo.",
+      "Carta de recomendación y portafolio de impacto regional."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 8,
     "category": "Ingeniería",
     "company": "Siemens",
     "title": "Practicante / Asistente de Ingeniería",
     "logo": "../assets/svg/logos/siemens.svg",
     "description": "Apoyar la elaboración de planos técnicos y documentación en proyectos de automatización e infraestructura.",
-    "skills": ["AutoCAD", "Excel", "Gestión de Proyectos"],
+    "companyDescription": "Siemens es una potencia tecnológica centrada en la industria, infraestructura, transporte y salud, generando impacto con tecnologías con propósito.",
+    "location": "Tenjo / Bogotá (Presencial en planta/oficinas)",
     "modality": "Presencial",
+    "workload": "Práctica Profesional reglamentaria",
+    "duration": "6 meses",
+    "vacancies": 2,
     "date": "10 noviembre 2026",
+    "skills": ["AutoCAD", "Excel", "Gestión de Proyectos"],
+    "requirements": [
+      "Estudiante de Ingeniería Mecánica, Eléctrica, Electrónica, Mecatrónica o Industrial.",
+      "Manejo de software CAD (AutoCAD, SolidWorks o similar).",
+      "Conocimiento básico de normativas de seguridad industrial y planos unifilares.",
+      "Disponibilidad para realizar práctica avalada por la universidad."
+    ],
+    "responsibilities": [
+      "Actualizar planos electromecánicos y esquemas de control en proyectos activos.",
+      "Verificar listas de materiales y especificaciones técnicas con proveedores.",
+      "Acompañar a ingenieros de campo en visitas técnicas y comisionamiento.",
+      "Organizar la documentación de cierre de proyectos para entrega al cliente final."
+    ],
+    "benefits": [
+      "Ruta de transporte empresarial y almuerzo cubierto en planta.",
+      "Auxilio de práctica según marco legal vigente.",
+      "Entrenamiento en software industrial especializado de Siemens.",
+      "Excelente proyección para ingresar al programa de graduados de la empresa."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 9,
     "category": "Fotografía",
     "company": "Falabella",
     "title": "Asistente de Fotografía e Imagen",
     "logo": "../assets/svg/logos/cmr-falabella.svg",
     "description": "Asistir en la preparación de sets, iluminación y retoque fotográfico para catálogo e-commerce.",
-    "skills": ["Fotografía Studio", "Lightroom", "Photoshop"],
+    "companyDescription": "Falabella es uno de los retailers y plataformas de comercio multicanal más grandes de Sudamérica, ofreciendo moda, hogar, tecnología y estilo de vida.",
+    "location": "Bogotá, Colombia (Estudio Fotográfico Central)",
     "modality": "Presencial",
+    "workload": "Medio tiempo / 20h semanales",
+    "duration": "3 a 6 meses",
+    "vacancies": 1,
     "date": "8 noviembre 2026",
+    "skills": ["Fotografía Studio", "Lightroom", "Photoshop"],
+    "requirements": [
+      "Estudiante de Fotografía, Artes Visuales, Publicidad o Diseño de Modas.",
+      "Dominio de iluminación de estudio (flashes de rebote, modificadores de luz).",
+      "Manejo de Adobe Lightroom y Photoshop para corrección de color y recorte.",
+      "Portafolio fotográfico enfocado en producto o moda."
+    ],
+    "responsibilities": [
+      "Armar y calibrar sets de iluminación para sesiones de producto de moda y tecnología.",
+      "Clasificar y renombrar archivos digitales en el servidor de producción.",
+      "Realizar retoques básicos y estandarización de fondos para catálogo online.",
+      "Asistir al fotógrafo principal durante las jornadas de producción masiva."
+    ],
+    "benefits": [
+      "Acceso a equipamiento profesional de última generación de iluminación y cámaras.",
+      "Descuentos corporativos en tiendas Falabella.",
+      "Horarios acordados que no interfieren con asignaturas académicas.",
+      "Certificado de práctica expedido por el departamento creativo."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 10,
     "category": "Finanzas",
     "company": "Deloitte",
     "title": "Analista Financiero Junior",
     "logo": "../assets/svg/logos/deloitte.svg",
     "description": "Elaborar modelos de proyección financiera, auditoría preliminar y análisis de datos contables.",
-    "skills": ["Excel", "Análisis Financiero", "Modelación"],
+    "companyDescription": "Deloitte es una de las 'Big Four' firmas de servicios profesionales más prestigiosas del mundo, brindando consultoría financiera, auditoría y asesoramiento estratégico.",
+    "location": "Bogotá, Colombia (Híbrido)",
     "modality": "Híbrido",
+    "workload": "Tiempo Parcial / 25h semanales",
+    "duration": "6 meses",
+    "vacancies": 2,
     "date": "6 noviembre 2026",
+    "skills": ["Excel", "Análisis Financiero", "Modelación"],
+    "requirements": [
+      "Estudiante de Finanzas, Contaduría Pública, Economía o Ingeniería Financiera.",
+      "Comprensión clara de estados financieros (Balance General, PyG, Flujo de Caja).",
+      "Manejo de Excel para modelado y evaluación de inversiones.",
+      "Capacidad analítica, pensamiento crítico y compromiso ético."
+    ],
+    "responsibilities": [
+      "Consolidar bases de datos contables y verificar consistencia de partidas financieras.",
+      "Apoyar la construcción de modelos de valoración y proyecciones de flujo de caja.",
+      "Preparar presentaciones ejecutivas con hallazgos clave para comités de clientes.",
+      "Acompañar pruebas de auditoría y revisión de cumplimiento regulatorio."
+    ],
+    "benefits": [
+      "Remuneración de práctica con paquete de beneficios corporativos.",
+      "Mentoría con socios y directores de la línea de consultoría financiera.",
+      "Certificaciones en análisis de datos y normas internacionales (NIIF).",
+      "Alta probabilidad de incorporación laboral formal al graduarse."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 11,
     "category": "Investigación",
     "company": "Kantar",
     "title": "Asistente de Investigación de Mercados",
     "logo": "../assets/svg/logos/Kantar_Group_logo.svg.webp",
     "description": "Recopilar y procesar información cualitativa y cuantitativa sobre tendencias de consumo.",
-    "skills": ["Investigación de Mercado", "Análisis de Datos", "Redacción"],
+    "companyDescription": "Kantar es la empresa líder mundial en consultoría e insights basados en datos de mercado, comprendiendo cómo las personas piensan, sienten y actúan.",
+    "location": "Remoto - Colombia",
     "modality": "Remoto",
+    "workload": "Medio tiempo (20h/semana)",
+    "duration": "4 a 6 meses",
+    "vacancies": 1,
     "date": "4 noviembre 2026",
+    "skills": ["Investigación de Mercado", "Análisis de Datos", "Redacción"],
+    "requirements": [
+      "Estudiante de Sociología, Antropología, Psicología del Consumidor, Mercadeo o Estadística.",
+      "Habilidades metodológicas para estructuración de encuestas y grupos focales.",
+      "Capacidad para interpretar patrones cuantitativos y extraer conclusiones humanas.",
+      "Manejo de herramientas de visualización de datos y redacción de informes claros."
+    ],
+    "responsibilities": [
+      "Diseñar cuestionarios y pautas de entrevista para estudios de consumo.",
+      "Depurar y tabular bases de datos de respuestas de paneles de consumidores.",
+      "Redactar síntesis de hallazgos y reportes ejecutivos para marcas de consumo masivo.",
+      "Identificar micro-tendencias culturales y hábitos de compra emergentes."
+    ],
+    "benefits": [
+      "Esquema 100% remoto con subsidio de conectividad.",
+      "Aprendizaje directo con los mayores expertos en comportamiento del consumidor.",
+      "Horarios acordados que respetan fechas de entregas y parciales.",
+      "Constancia de participación en estudios de escala regional."
+    ],
     "url": "opportunity-detail.html"
   },
   {
+    "id": 12,
     "category": "Video",
     "company": "Caracol Televisión",
     "title": "Editor de Video Junior",
     "logo": "../assets/svg/logos/Caracol_Televisión_logo.svg.webp",
     "description": "Editar material audiovisual y adaptar formatos para distribución en plataformas digitales y redes.",
-    "skills": ["Adobe Premiere", "After Effects", "Edición Audiovisual"],
+    "companyDescription": "Caracol Televisión es la principal cadena de medios de comunicación en Colombia, creadora de contenidos audiovisuales de alto impacto a nivel global.",
+    "location": "Bogotá, Colombia (Canal Central / Híbrido)",
     "modality": "Híbrido",
+    "workload": "Medio tiempo / 20h semanales",
+    "duration": "6 meses",
+    "vacancies": 2,
     "date": "2 noviembre 2026",
+    "skills": ["Adobe Premiere", "After Effects", "Edición Audiovisual"],
+    "requirements": [
+      "Estudiante de Comunicación Social, Cine y Televisión, Medios Digitales o Diseño Audiovisual.",
+      "Dominio fluido de Adobe Premiere Pro (cortes, transiciones, sincronización de audio).",
+      "Conocimientos en After Effects para animaciones básicas de títulos y motion graphics.",
+      "Portafolio o reel con proyectos editados (cortos, reels, videoclips o piezas institucionales)."
+    ],
+    "responsibilities": [
+      "Seleccionar y montar material en bruto para cápsulas informativas y promocionales.",
+      "Adaptar contenidos televisivos a formatos verticales (9:16) para TikTok e Instagram.",
+      "Realizar corrección de color básica y mezcla balanceada de audio.",
+      "Gestionar y respaldar los activos de video en el sistema central de almacenamiento."
+    ],
+    "benefits": [
+      "Acceso a salas de postproducción profesional y tecnología broadcast.",
+      "Auxilio económico de práctica y alimentación.",
+      "Interacción directa con directores, editores senior y productores.",
+      "Crédito oficial de participación en piezas emitidas digitalmente."
+    ],
     "url": "opportunity-detail.html"
   }
 ]

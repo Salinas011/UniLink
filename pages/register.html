@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Cuenta | UniLink</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body
+    class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 flex min-h-screen flex-col"
+  >
+    <!-- NAVBAR -->
+    <div id="navBar"></div>
+
+    <!-- MAIN CONTENT -->
+    <main id="mainContent" class="flex-1 flex items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
+      <div class="w-full max-w-xl">
+        
+        <!-- CARD PRINCIPAL -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm space-y-6">
+          
+          <!-- CABECERA -->
+          <div class="text-center space-y-2">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+              <i data-lucide="user-plus" class="h-7 w-7"></i>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+              Únase a UniLink
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-500 max-w-md mx-auto">
+              Cree su cuenta y comience a vincular su talento o sus proyectos con la comunidad universitaria.
+            </p>
+          </div>
+
+          <!-- SELECCIÓN DE TIPO DE CUENTA -->
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2 text-center">
+              Seleccione el tipo de cuenta
+            </label>
+            <div class="grid grid-cols-2 gap-3" role="radiogroup">
+              <button
+                type="button"
+                id="regStudentTypeBtn"
+                class="account-type-btn flex flex-col items-center gap-2 rounded-2xl border-2 border-blue-600 bg-blue-50/50 p-4 text-center transition active:scale-98"
+                aria-checked="true"
+              >
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white">
+                  <i data-lucide="graduation-cap" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <span class="block text-sm font-bold text-slate-900">Estudiante</span>
+                  <span class="text-xs text-slate-500">Busco proyectos y vacantes</span>
+                </div>
+              </button>
+
+              <button
+                type="button"
+                id="regCompanyTypeBtn"
+                class="account-type-btn flex flex-col items-center gap-2 rounded-2xl border-2 border-slate-200 bg-white p-4 text-center hover:border-slate-300 transition active:scale-98"
+                aria-checked="false"
+              >
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-slate-600">
+                  <i data-lucide="building-2" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <span class="block text-sm font-bold text-slate-900">Empresa / Proyecto</span>
+                  <span class="text-xs text-slate-500">Publico necesidades y retos</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- FORMULARIO DE REGISTRO -->
+          <form id="registerForm" class="space-y-4">
+            
+            <!-- CAMPOS PARA ESTUDIANTE -->
+            <div id="studentFields" class="space-y-4">
+              <div>
+                <label for="studentFullName" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                  Nombre Completo *
+                </label>
+                <input
+                  type="text"
+                  id="studentFullName"
+                  placeholder="Ej. María Fernanda Gómez"
+                  class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="studentEmail" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    Correo Institucional *
+                  </label>
+                  <input
+                    type="email"
+                    id="studentEmail"
+                    placeholder="estudiante@universidad.edu.co"
+                    class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  />
+                </div>
+
+                <div>
+                  <label for="studentPhone" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    Teléfono Celular *
+                  </label>
+                  <input
+                    type="tel"
+                    id="studentPhone"
+                    placeholder="300 123 4567"
+                    class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="studentUniversity" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    Universidad *
+                  </label>
+                  <input
+                    type="text"
+                    id="studentUniversity"
+                    placeholder="Ej. Universidad Nacional"
+                    class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  />
+                </div>
+
+                <div>
+                  <label for="studentProgram" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    Carrera o Programa *
+                  </label>
+                  <input
+                    type="text"
+                    id="studentProgram"
+                    placeholder="Ej. Diseño Gráfico / Sistemas"
+                    class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="studentSemester" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                  Semestre en curso *
+                </label>
+                <select
+                  id="studentSemester"
+                  class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100 bg-white"
+                >
+                  <option value="">Seleccione su semestre</option>
+                  <option value="1">1° - 3° Semestre</option>
+                  <option value="4">4° - 5° Semestre</option>
+                  <option value="6" selected>6° - 7° Semestre</option>
+                  <option value="8">8° - 10° Semestre</option>
+                  <option value="graduated">Egresado / Graduado</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- CAMPOS PARA EMPRESA (OCULTOS POR DEFECTO) -->
+            <div id="companyFields" class="hidden space-y-4">
+              <div>
+                <label for="companyName" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                  Nombre de la Empresa o Emprendimiento *
+                </label>
+                <input
+                  type="text"
+                  id="companyName"
+                  placeholder="Ej. Mercado Libre / Startup Tech"
+                  class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="companyNit" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    NIT / Identificación Tributaria *
+                  </label>
+                  <input
+                    type="text"
+                    id="companyNit"
+                    placeholder="900.123.456-7"
+                    class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  />
+                </div>
+
+                <div>
+                  <label for="companySector" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    Sector o Industria *
+                  </label>
+                  <select
+                    id="companySector"
+                    class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100 bg-white"
+                  >
+                    <option value="">Seleccione sector</option>
+                    <option value="tech">Tecnología y Software</option>
+                    <option value="design">Diseño y Creatividad</option>
+                    <option value="marketing">Marketing y Comunicación</option>
+                    <option value="finance">Finanzas y Consultoría</option>
+                    <option value="health">Salud y Biotecnología</option>
+                    <option value="other">Otro sector</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="companyContactEmail" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    Correo Corporativo *
+                  </label>
+                  <input
+                    type="email"
+                    id="companyContactEmail"
+                    placeholder="talento@empresa.com"
+                    class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  />
+                </div>
+
+                <div>
+                  <label for="companyContactPhone" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    Teléfono de Contacto *
+                  </label>
+                  <input
+                    type="tel"
+                    id="companyContactPhone"
+                    placeholder="310 987 6543"
+                    class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- CONTRASEÑA Y CONFIRMACIÓN -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-slate-100">
+              <div>
+                <label for="regPassword" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                  Contraseña *
+                </label>
+                <div class="relative">
+                  <input
+                    type="password"
+                    id="regPassword"
+                    required
+                    placeholder="Mínimo 6 caracteres"
+                    class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="regConfirmPassword" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                  Confirmar Contraseña *
+                </label>
+                <input
+                  type="password"
+                  id="regConfirmPassword"
+                  required
+                  placeholder="Repita la contraseña"
+                  class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                />
+              </div>
+            </div>
+
+            <!-- TÉRMINOS Y CONDICIONES -->
+            <div class="pt-2">
+              <label class="flex items-start gap-2.5 cursor-pointer text-xs text-slate-600">
+                <input
+                  type="checkbox"
+                  id="agreeTerms"
+                  required
+                  class="mt-0.5 h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                />
+                <span>
+                  Acepto los <a href="#" class="font-medium text-blue-600 hover:underline">Términos de Servicio</a> y la <a href="#" class="font-medium text-blue-600 hover:underline">Política de Privacidad</a> de la plataforma UniLink.
+                </span>
+              </label>
+            </div>
+
+            <!-- BOTÓN ENVIAR REGISTRO -->
+            <button
+              type="submit"
+              id="registerSubmitBtn"
+              class="w-full flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-xs hover:bg-blue-700 transition active:scale-95"
+            >
+              <i data-lucide="user-check" class="h-4 w-4"></i>
+              <span>Crear mi cuenta en UniLink</span>
+            </button>
+          </form>
+
+          <!-- ENLACE A INICIAR SESIÓN -->
+          <div class="text-center pt-2 border-t border-slate-100">
+            <p class="text-xs sm:text-sm text-slate-600">
+              ¿Ya tiene una cuenta registrada?
+              <a
+                href="login.html"
+                class="font-semibold text-blue-600 hover:text-blue-700 hover:underline"
+              >
+                Inicie sesión aquí
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- TOAST NOTIFICACIÓN -->
+    <div
+      id="toastNotification"
+      class="fixed bottom-5 right-5 z-50 hidden items-center gap-3 rounded-xl bg-slate-900 px-4 py-3 text-sm text-white shadow-xl transition-all"
+      role="status"
+    >
+      <i id="toastIcon" data-lucide="check" class="h-5 w-5 text-emerald-400"></i>
+      <span id="toastMessage">Operación realizada con éxito</span>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../js/components/button.js"></script>
+    <script src="../js/pages/register.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

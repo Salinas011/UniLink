@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión | UniLink</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body
+    class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 flex min-h-screen flex-col"
+  >
+    <!-- NAVBAR -->
+    <div id="navBar"></div>
+
+    <!-- MAIN CONTENT -->
+    <main id="mainContent" class="flex-1 flex items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
+      <div class="w-full max-w-md">
+        
+        <!-- CARD PRINCIPAL -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm space-y-6">
+          
+          <!-- CABECERA -->
+          <div class="text-center space-y-2">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+              <i data-lucide="log-in" class="h-7 w-7"></i>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+              Bienvenido de nuevo
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-500">
+              Ingrese a su cuenta de UniLink para gestionar proyectos y postulaciones.
+            </p>
+          </div>
+
+          <!-- SELECTOR DE ROL (ESTUDIANTE / EMPRESA) -->
+          <div class="grid grid-cols-2 gap-1 rounded-2xl bg-slate-100 p-1.5" role="tablist">
+            <button
+              type="button"
+              id="roleStudentBtn"
+              role="tab"
+              aria-selected="true"
+              class="role-tab flex items-center justify-center gap-2 rounded-xl bg-white px-3 py-2 text-xs sm:text-sm font-semibold text-blue-700 shadow-xs transition"
+            >
+              <i data-lucide="graduation-cap" class="h-4 w-4"></i>
+              Estudiante
+            </button>
+            <button
+              type="button"
+              id="roleCompanyBtn"
+              role="tab"
+              aria-selected="false"
+              class="role-tab flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 transition"
+            >
+              <i data-lucide="building-2" class="h-4 w-4"></i>
+              Empresa
+            </button>
+          </div>
+
+          <!-- FORMULARIO DE ACCESO -->
+          <form id="loginForm" class="space-y-4">
+            <!-- CORREO -->
+            <div>
+              <label
+                for="loginEmail"
+                id="emailLabel"
+                class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1.5"
+              >
+                Correo Institucional *
+              </label>
+              <div class="relative">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+                  <i data-lucide="mail" class="h-4 w-4"></i>
+                </div>
+                <input
+                  type="email"
+                  id="loginEmail"
+                  required
+                  placeholder="ejemplo@universidad.edu.co"
+                  class="w-full rounded-xl border border-slate-300 pl-10 pr-4 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                />
+              </div>
+            </div>
+
+            <!-- CONTRASEÑA -->
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label
+                  for="loginPassword"
+                  class="block text-xs font-semibold uppercase tracking-wider text-slate-700"
+                >
+                  Contraseña *
+                </label>
+                <a
+                  href="#"
+                  id="forgotPasswordLink"
+                  class="text-xs font-medium text-blue-600 hover:text-blue-700 hover:underline"
+                >
+                  ¿Olvidó su contraseña?
+                </a>
+              </div>
+              <div class="relative">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+                  <i data-lucide="lock" class="h-4 w-4"></i>
+                </div>
+                <input
+                  type="password"
+                  id="loginPassword"
+                  required
+                  placeholder="••••••••••••"
+                  class="w-full rounded-xl border border-slate-300 pl-10 pr-10 py-2.5 text-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                />
+                <button
+                  type="button"
+                  id="togglePasswordBtn"
+                  class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-slate-400 hover:text-slate-600"
+                  aria-label="Mostrar u ocultar contraseña"
+                >
+                  <i id="eyeIcon" data-lucide="eye" class="h-4 w-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- RECORDAR SESIÓN -->
+            <div class="flex items-center justify-between">
+              <label class="flex items-center gap-2 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  id="rememberMe"
+                  class="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                />
+                <span class="text-xs sm:text-sm text-slate-600">
+                  Recordar mi sesión
+                </span>
+              </label>
+            </div>
+
+            <!-- BOTÓN ENVIAR -->
+            <button
+              type="submit"
+              id="loginSubmitBtn"
+              class="w-full flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-xs hover:bg-blue-700 transition active:scale-95"
+            >
+              <i data-lucide="arrow-right" class="h-4 w-4"></i>
+              <span>Iniciar sesión</span>
+            </button>
+          </form>
+
+          <!-- SEPARADOR -->
+          <div class="relative flex items-center justify-center">
+            <div class="w-full border-t border-slate-200"></div>
+            <span class="absolute bg-white px-3 text-xs uppercase tracking-wider text-slate-400">
+              O continúe con
+            </span>
+          </div>
+
+          <!-- ACCESO SOCIAL / INSTITUCIONAL -->
+          <div class="grid grid-cols-2 gap-3">
+            <button
+              type="button"
+              class="social-login-btn flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-50 transition active:scale-95"
+            >
+              <svg class="h-4 w-4" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span>Google</span>
+            </button>
+
+            <button
+              type="button"
+              class="social-login-btn flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-50 transition active:scale-95"
+            >
+              <svg class="h-4 w-4" viewBox="0 0 24 24">
+                <path fill="#F25022" d="M1 1h10v10H1z"/>
+                <path fill="#00A4EF" d="M1 13h10v10H1z"/>
+                <path fill="#7FBA00" d="M13 1h10v10H13z"/>
+                <path fill="#FFB900" d="M13 13h10v10H13z"/>
+              </svg>
+              <span>Office 365</span>
+            </button>
+          </div>
+
+          <!-- ENLACE A REGISTRO -->
+          <div class="text-center pt-2 border-t border-slate-100">
+            <p class="text-xs sm:text-sm text-slate-600">
+              ¿Aún no tiene una cuenta?
+              <a
+                href="register.html"
+                class="font-semibold text-blue-600 hover:text-blue-700 hover:underline"
+              >
+                Regístrese aquí
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- TOAST NOTIFICACIÓN -->
+    <div
+      id="toastNotification"
+      class="fixed bottom-5 right-5 z-50 hidden items-center gap-3 rounded-xl bg-slate-900 px-4 py-3 text-sm text-white shadow-xl transition-all"
+      role="status"
+    >
+      <i id="toastIcon" data-lucide="check" class="h-5 w-5 text-emerald-400"></i>
+      <span id="toastMessage">Operación realizada con éxito</span>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../js/components/button.js"></script>
+    <script src="../js/pages/login.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

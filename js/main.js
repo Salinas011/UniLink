@@ -195,6 +195,27 @@ document.addEventListener(
     );
 
 
+    if (!isPageInsidePages) {
+      const navElement = document.querySelector("#navBar");
+      if (navElement) {
+        navElement.querySelectorAll("a[href^='../']").forEach((a) => {
+          a.setAttribute("href", a.getAttribute("href").replace(/^\.\.\//, "./"));
+        });
+        navElement.querySelectorAll("img[src^='../']").forEach((img) => {
+          img.setAttribute("src", img.getAttribute("src").replace(/^\.\.\//, "./"));
+        });
+      }
+      const footerElement = document.querySelector("#footer");
+      if (footerElement) {
+        footerElement.querySelectorAll("a[href^='../']").forEach((a) => {
+          a.setAttribute("href", a.getAttribute("href").replace(/^\.\.\//, "./"));
+        });
+        footerElement.querySelectorAll("img[src^='../']").forEach((img) => {
+          img.setAttribute("src", img.getAttribute("src").replace(/^\.\.\//, "./"));
+        });
+      }
+    }
+
     // ======================================
     // COMPONENTES
     // ======================================
@@ -228,6 +249,48 @@ document.addEventListener(
     ) {
 
       initializeOpportunities();
+
+    }
+
+
+    // ======================================
+    // OPPORTUNITY DETAIL PAGE
+    // ======================================
+
+    if (
+      typeof initializeOpportunityDetail ===
+      "function"
+    ) {
+
+      initializeOpportunityDetail();
+
+    }
+
+
+    // ======================================
+    // LOGIN PAGE
+    // ======================================
+
+    if (
+      typeof initializeLogin ===
+      "function"
+    ) {
+
+      initializeLogin();
+
+    }
+
+
+    // ======================================
+    // REGISTER PAGE
+    // ======================================
+
+    if (
+      typeof initializeRegister ===
+      "function"
+    ) {
+
+      initializeRegister();
 
     }
 
